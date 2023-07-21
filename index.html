@@ -193,11 +193,11 @@
         if (sessionStorage.getItem(sessionUserIsPlayingKey) === null) {
           sessionStorage.setItem(sessionUserIsPlayingKey, false);
         }
-        if (sessionStorage.getItem(localTotalVictoryKey) === null) {
-          sessionStorage.setItem(localTotalVictoryKey, 0);
+        if (localStorage.getItem(localTotalVictoryKey) === null) {
+          localStorage.setItem(localTotalVictoryKey, 0);
         }
-        if (sessionStorage.getItem(localMaximumAttemptsKey) === null) {
-          sessionStorage.setItem(localMaximumAttemptsKey, 0);
+        if (localStorage.getItem(localMaximumAttemptsKey) === null) {
+          localStorage.setItem(localMaximumAttemptsKey, 0);
         }
       } else {
         alert('Browser yang Anda gunakan tidak mendukung Web Storage');
